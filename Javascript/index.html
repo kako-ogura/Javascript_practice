@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div class="">
+      <script>
+        //文章表示
+        //documentはオブジェクトでwriteはメゾット
+        //"Javascriptを勉強中です"はパラメーター
+        document.write('Javascriptを勉強中です');
+        //警告ウインドウを表示する
+        window.alert('you are seccessed!');
+        //ユーザーの入力を受け付ける
+        //letの変数でpromptのメゾットを記録する
+        let day = prompt('何か入力してみてください');
+        document.write(60*60*24*day);
+        //現在の秒数をとる
+        //Date()はクラスオブジェクト
+        //constは上書きできない
+        const today = new Date();
+        let hour = today.getHours();
+        let second = today.getSeconds();
+        document.write(`${hour} 時${second} 秒`);
+      </script>
+    </div>
+  </body>
+</html>

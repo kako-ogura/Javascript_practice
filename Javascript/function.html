@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div class="">
+      <script>
+        //関数(ES6 ver)
+        const getTax = (price,tax=10) => { //標準値で10%の計算ができる
+          return Math.round(price * (tax / 100));
+        }
+
+        let tax = getTax(1900);　//もし8%が計算したかったら（1900,8）
+        document.write(tax);
+      </script>
+    </div>
+  </body>
+</html>

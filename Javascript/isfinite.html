@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div class="">
+      <script>
+        //promptは全て文字で判断
+        //parseは数字の型
+        const cnt = parseInt(prompt('いくつ購入しますか？'));
+
+        //数字か判別する
+        if (Number.isFinite(cnt)) {
+          document.write(`${cnt*160}円です`);
+        }else {
+          document.write('数字を入力してください');
+        }
+
+      </script>
+    </div>
+  </body>
+</html>
