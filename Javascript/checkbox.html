@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div>
+      <label>
+        <input type="checkbox" name="agree" id="agree">
+        同意する
+      </label>
+    </div>
+    <div>
+      <button id="submit" disabled>送信する</button>
+    </div>
+    <script>
+      const agree = document.getElementById('agree');
+      agree.addEventListener('change', () => {
+        alert(agree.checked);
+      });
+    </script>
+  </body>
+</html>

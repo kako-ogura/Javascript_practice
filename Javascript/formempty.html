@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <p>メールアドレス：
+      <input type="email" name="email" id="">
+      <span style="color:#f33"></span>
+    </p>
+    <script>
+      const email = document.querySelector('input[name="email"]');
+      email.addEventListener('blur', () => {
+        if (email.value === '') {
+          email.style.backgroundColor = '#fcc';
+          email.nextElementSibling.innerHTML = '＊　メールアドレスを記入してください';
+        }else {
+          email.style.backgroundColor = '';
+          email.nextElementSibling.innerHTML = '';
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div class="">
+      <script>
+        //class Calc {
+          //計算結果を返した時
+          //static sum(num1,num2){
+            //return num1 + num2;
+          //}
+        //}
+
+        class Item {
+          constructor(tax) {
+            if (isFinite(tax)) {
+              this._tax = tax;
+            }else {
+              this._tax = 0;
+            }
+          }
+          //setで検査したい場合
+          set tax(tax){
+            if (isFinite(tax)) {
+              this._tax = tax;
+            }else {
+              this._tax = 0;
+            }
+          }
+          //setで検出した後getで返す
+          get tax(){
+            return this._tax + '%';
+          }
+        }
+
+        let item = new Item(8);
+        //item.tax = 'abc';
+        document.write(item.tax);
+      </script>
+    </div>
+  </body>
+</html>

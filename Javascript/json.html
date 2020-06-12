@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div class="">
+      <script>
+        //JSON
+        const locations = [
+          {
+            "name":"国会議事堂",
+            "address":"東京都千代田区"
+          },
+          {
+            "name":"札幌時計台",
+            "address":"札幌市中央区"
+          },
+          {
+            "name":"首里城",
+            "address":"沖縄県那覇市"
+          }
+        ];
+
+        for (let i = 0; i < locations.length; i++) {
+          document.write(locations[i].name + '/'//i番目の名前
+            + locations[i].address + '<br>')//i番目のアドレス
+        }
+      </script>
+    </div>
+  </body>
+</html>

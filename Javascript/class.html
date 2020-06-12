@@ -9,7 +9,23 @@
     <h1>Javascript</h1>
     <div class="">
       <script>
-        
+        //Itemクラスを定義
+        class Item {
+          //プロパティーのためのコンストラクターを定義する
+          constructor(price){
+            //this.priceというプロパティー
+            this.price = price;
+          }
+          //消費税を取得するメゾット
+          getTax(){
+            return Math.round(this.price * (10 / 100));
+          }
+        }
+
+        const price = parseInt(prompt('商品の金額を入力してください'));
+        //itemにインスタンスする
+        const item = new Item(price);
+        document.write('消費税金額は' + item.getTax() +'円です');
       </script>
     </div>
   </body>
