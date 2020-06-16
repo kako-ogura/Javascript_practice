@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div>
+
+    </div>
+    <script>
+      const zip_pattern = /^\d{3}-?\d{4}$/g; //郵便番号の正規表現
+      let zip = '123-475　6';
+
+      if (zip_pattern.test(zip) === true) { //.testで確認する
+        document.write('正しく入力されました')
+      }else {
+        document.write('正しく入力されていません')
+      }
+    </script>
+  </body>
+</html>

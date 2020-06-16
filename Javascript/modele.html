@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript practice</title>
+  </head>
+
+  <body>
+    <h1>Javascript</h1>
+    <div>
+      <p id="answer"></p>
+    </div>
+    <script type="module">
+      import { sum } from './math.js';
+
+      let answer = sum(10,2);
+      document.getElementById('answer').innerHTML = answer;
+    </script>
+  </body>
+</html>

@@ -19,7 +19,13 @@
     <script>
       const agree = document.getElementById('agree');
       agree.addEventListener('change', () => {
-        alert(agree.checked);
+        //if (agree.checked === true) {
+          //document.getElementById('submit').disabled = false;
+        //}else {
+          //document.getElementById('submit').disabled = true;
+        //}
+
+        document.getElementById('submit').disabled = !agree.checked;
       });
     </script>
   </body>

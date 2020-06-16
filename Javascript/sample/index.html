@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>JavaScript</h1>
+    <div id="output">
+
+    </div>
+    <script>
+      const url = 'location.json'
+
+      const getLocations = ( ) => {
+        return new Promise(Function(resolve){
+          let xhr = new HMLHttpRequest();
+          xhr.open('GET', url);
+          xhr.send();
+        })
+      }
+    </script>
+  </body>
+</html>
