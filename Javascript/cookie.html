@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    <div>
+      <input type="text" name="email" id="email">
+      <button id="save">メールアドレスを保存する</button>
+      <script>
+        document.getElementById('save').addEventListener('click',function(){
+          //Coolie を安全に保存する、ログイン情報をしばらく保存する
+          let email = encodeURIComponent(document.getElementById('email').value);
+          document.cookie = 'email' + email + ';max-age=3600; path=/sample31; secure=true';
+        })
+      </script>
+    </div>
+  </body>
+</html>
